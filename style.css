@@ -1,0 +1,120 @@
+body {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    background: url(src/v748-toon-106.jpg);
+}
+
+.contenedor {
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.col_persona {
+    width: 100%;
+    background: rgb(53, 53, 53);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.imgname {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.imgname h3 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.imgname img {
+    border-radius: 15px;
+    object-fit: cover;
+    width: 80%;
+    transition: 0.4s ease-in-out;
+}
+
+.imgname img:hover {
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+}
+
+.dat_personales {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dat_personales label {
+    margin-bottom: 8px;
+    overflow: hidden;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.col_xp {
+    width: 100%;
+    background: rgb(211, 211, 211);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rec>p {
+    width: 50%;
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+    .col_persona {
+        width: 45%;
+    }
+    .col_xp {
+        width: 55%;
+    }
+    .dat_personales label {
+        font-size: 16px;
+        padding-left: 12px;
+    }
+    .rec>p {
+        width: 30%;
+    }
+}
+
+@media (min-width: 901px) {
+    .col_persona {
+        width: 40%;
+    }
+    .col_xp {
+        width: 60%;
+    }
+    .dat_personales label {
+        font-size: 18px;
+        padding-left: 12px;
+    }
+    .imgname img {
+        border-radius: 25px;
+    }
+    .imgname img:hover {
+        border-radius: 10px;
+    }
+    .rec>p {
+        width: 22%;
+    }
+}
