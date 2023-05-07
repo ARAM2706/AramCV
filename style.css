@@ -71,6 +71,10 @@ body {
     flex-direction: column;
 }
 
+#cursos>p {
+    font-weight: bold;
+}
+
 .rec {
     display: flex;
     flex-wrap: wrap;
