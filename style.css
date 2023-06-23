@@ -1,9 +1,17 @@
 body {
     background: rgb(47, 0, 50);
+    min-width: 700px !important;
 }
 
 .navbar {
     background: #000000;
+    display: flex;
+}
+
+.navson {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .navcont {
@@ -137,4 +145,72 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+
+@media(min-width:450px) and (max-width:1000px) {
+    .navson {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .navname {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navcont {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .navcont button {
+        width: 25%;
+    }
+    .cardbody {
+        flex-wrap: wrap;
+    }
+    .contacto p {
+        width: 45%;
+    }
+    .r {
+        justify-content: start;
+    }
+    .l {
+        justify-content: start;
+    }
+}
+
+@media(min-width:100px) and (max-width:449px) {
+    .navson {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .navname {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navcont {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .navcont button {
+        width: 45%;
+    }
+    .cardbody {
+        flex-wrap: wrap;
+    }
+    .contacto p {
+        width: 45%;
+    }
+    .r {
+        justify-content: start;
+    }
+    .l {
+        justify-content: start;
+    }
 }
