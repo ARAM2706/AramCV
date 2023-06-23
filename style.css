@@ -1,124 +1,140 @@
 body {
-    margin: 5px;
+    background: rgb(47, 0, 50);
+}
+
+.navbar {
+    background: #000000;
+}
+
+.navcont {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+}
+
+.navname {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.navname img {
+    border-radius: 10px;
+}
+
+.pname {
+    color: white;
+    margin-left: 10px;
+    font-size: 21px;
+}
+
+.btnnav {
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #9c00b5;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.social img {
+    transition: 0.4s linear;
+}
+
+.social img:hover {
+    transform: scale(1.4);
+    transition: 0.4s linear;
+}
+
+.perfil {
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    width: 60%;
+}
+
+.card {
+    background: #00000065;
+}
+
+.cardbody {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    color: white;
+}
+
+.habilidades {
+    width: 100%;
     display: flex;
     justify-content: center;
-    background: url(src/v748-toon-106.jpg);
-}
-
-.contenedor {
-    width: 100%;
-    height: max-content;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.col_persona {
-    width: 100%;
-    background: rgb(53, 53, 53);
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    color: white;
 }
 
-.imgname {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: white;
+.l .r {
+    width: 100%;
 }
 
-.imgname h3 {
-    margin-top: 10px;
-    text-align: center;
+.r {
+    justify-content: start;
 }
 
-.imgname img {
-    border-radius: 15px;
-    object-fit: cover;
-    width: 80%;
-    transition: 0.4s ease-in-out;
+.l {
+    justify-content: end;
 }
 
-.imgname img:hover {
+.cardbodyhab {
+    width: 100%;
     border-radius: 5px;
-    transition: 0.4s ease-in-out;
-}
-
-.dat_personales {
-    padding: 5px;
+    margin-top: 10px;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    color: white;
+    justify-content: space-between;
+    background: rgba(79, 79, 79, 0.73);
 }
 
-.dat_personales label {
-    margin-bottom: 8px;
-    overflow: hidden;
-    font-size: 14px;
-    padding-left: 10px;
+.cardbodyhab img {
+    transition: 0.4s linear;
 }
 
-.col_xp {
+.cardbodyhab img:hover {
+    transform: scale(1.4);
+    transition: 0.4s linear;
+}
+
+.cardbodyrec {
     width: 100%;
-    background: rgb(211, 211, 211);
+    border-radius: 5px;
+    margin-top: 10px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-#cursos>p {
-    font-weight: bold;
+.cardbodyrec a {
+    text-decoration: none;
+    color: white;
 }
 
 .rec {
+    width: 25%;
+}
+
+.recend {
+    width: 80%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-}
-
-.rec>p {
-    width: 50%;
-}
-
-@media (min-width: 500px) and (max-width: 900px) {
-    .col_persona {
-        width: 45%;
-    }
-    .col_xp {
-        width: 55%;
-    }
-    .dat_personales label {
-        font-size: 16px;
-        padding-left: 12px;
-    }
-    .rec>p {
-        width: 30%;
-    }
-}
-
-@media (min-width: 901px) {
-    .col_persona {
-        width: 40%;
-    }
-    .col_xp {
-        width: 60%;
-    }
-    .dat_personales label {
-        font-size: 18px;
-        padding-left: 12px;
-    }
-    .imgname img {
-        border-radius: 25px;
-    }
-    .imgname img:hover {
-        border-radius: 10px;
-    }
-    .rec>p {
-        width: 22%;
-    }
+    text-align: center;
 }
